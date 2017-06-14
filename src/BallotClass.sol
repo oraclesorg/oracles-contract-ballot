@@ -7,7 +7,9 @@ contract BallotClass {
     struct Ballot {
         address owner;
         address miningKey;
+        address affectedKey;
         string memo;
+        uint affectedKeyType;
         uint createdAt;
         uint votingStart;
         uint votingDeadline;
